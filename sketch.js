@@ -24,9 +24,9 @@ function setup() {
   colorMode(HSB, 360, 100, 100, 1)
   rectMode(CENTER)
 
-  button = createButton('toggle')
+  button = createButton('click to play')
   button.mousePressed(toggleSong)
-  song.play()
+  button.position(452,10)
 
   fft = new p5.FFT(smoothing, binCount)
 
