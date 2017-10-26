@@ -19,7 +19,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000, 1000)
+  createCanvas(1045, 1045)
 
   colorMode(HSB, 360, 100, 100, 1)
   rectMode(CENTER)
@@ -94,5 +94,10 @@ function draw() {
       pop()
 
     }
+  }
+
+  function windowResized() {
+    console.log("inside")
+    resizeCanvas(1045 / windowWidth, 1045 / windowHeight)
   }
 }
